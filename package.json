@@ -1,0 +1,27 @@
+{
+  "name": "crispycontent",
+  "version": "1.0.0",
+  "description": "===  Newsmag ===\r Contributors:\t\tmachothemes\r Tags:               custom-menu, custom-background, custom-colors, featured-images, translation-ready, threaded-comments, two-columns, three-columns, news, blog\r Requires at least:\t4.0\r Tested up to:\t\t4.8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prabhnith/crispyContent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prabhnith/crispyContent/issues"
+  },
+  "homepage": "https://github.com/Prabhnith/crispyContent#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "load-grunt-tasks": "^4.0.0"
+  }
+}
