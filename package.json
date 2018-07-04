@@ -17,11 +17,29 @@
   },
   "homepage": "https://github.com/Prabhnith/crispyContent#readme",
   "devDependencies": {
+    "clean": "^4.0.2",
+    "compress": "^0.99.0",
+    "concat": "^1.0.3",
+    "copy": "^0.3.2",
+    "cssmin": "^0.4.3",
     "grunt": "^1.0.3",
+    "grunt-checktextdomain": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-nodeunit": "^2.0.0",
     "grunt-contrib-uglify": "^3.3.0",
-    "load-grunt-tasks": "^4.0.0"
+    "imagemin": "^5.3.1",
+    "load-grunt-tasks": "^4.0.0",
+    "makepot": "^0.3.0",
+    "mincss": "^0.4.1",
+    "minimg": "^0.2.2",
+    "minjs": "^2.0.6",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }

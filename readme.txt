@@ -1,3 +1,4 @@
+https://www.demos.machothemes.com/newsmag-lite/
 ===  Newsmag ===
 Contributors:		machothemes
 Tags:               custom-menu, custom-background, custom-colors, featured-images, translation-ready, threaded-comments, two-columns, three-columns, news, blog
