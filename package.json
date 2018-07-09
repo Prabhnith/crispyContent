@@ -35,11 +35,15 @@
     "mincss": "^0.4.1",
     "minimg": "^0.2.2",
     "minjs": "^2.0.6",
+    "nodemon": "^1.17.5",
     "uglify": "^0.1.5"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-imagemin": "^2.0.1",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "newsapi": "^2.2.2",
+    "request": "^2.87.0"
   }
 }

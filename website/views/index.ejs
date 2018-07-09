@@ -27,8 +27,9 @@
                                                 <span class="ticker"><strong>December 12, 2016</strong>&nbsp; - &nbsp;<strong>by</strong> admin</span>
                                             </div>
                                             <h3 class="entry-title">
-                            <a href="https://www.demos.machothemes.com/newsmag-lite/millennials-have-taken-over-the-city-square-a-surprise-party-was-organised/">Millennials have taken over the city square. A surprise party was organised</a>
-                        </h3>
+                                                <a href="https://www.demos.machothemes.com/newsmag-lite/millennials-have-taken-over-the-city-square-a-surprise-party-was-organised/">
+                                                Millennials have taken over the city square. A surprise party was organised</a>
+                                            </h3>
                                         </div>
                                         <!-- end caption -->
                                     </div>
@@ -78,31 +79,24 @@
                         <div id="newsmag_widget_posts_column-3" class="widget newsmag_builder">
                             <% include ./partials/topic-column %>
                         </div>
-
                         <div id="newsmag_widget_posts_list_vertical-1" class="widget newsmag_builder">
                             <div class="col-md-8 newsmag-post-list-vertical-row">
                                 <h2>
                                     <span>Travel Guides</span>
                                 </h2>
-                                <% include ./partials/travelguides %>
-                                <% include ./partials/travelguides %>
-                                <% include ./partials/travelguides %>
-                                <% include ./partials/travelguides %>
+                                <% travelguides.forEach(function(tour){ %>
+                                    <%- include("./partials/travelguides",{tour}); %>
+                                <% }); %>                                
                             </div>
                         </div>
-
                         <div id="newsmag_widget_posts_column-4" class="widget newsmag_builder">
                             <div class="col-md-4 newsmag-blog-post-layout-row">
                                 <h2><span>Social</span></h2>
-                                <% include ./partials/socials %>
-                                <% include ./partials/socials %>
-                                <% include ./partials/socials %>
-                                <% include ./partials/socials %>
-                                <% include ./partials/socials %>
-                                <% include ./partials/socials %>
+                                <% articles.forEach(function(article){ %>
+                                    <%- include("./partials/socials",{article}); %>
+                                <% }); %>                                
                             </div>
                         </div>
-
                         <div id="newsmag_widget_posts_list_horizontal-1" class="widget newsmag_builder">
                             <div class="newsmag-margin-top post-list-horizontal newsmag-blog-post-layout-row">
                                 <div class="col-md-12">
@@ -111,15 +105,15 @@
                                 </h2>
                                 </div>
                                 <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>
+                                    <% include ./partials/featuredPost %>
+                                        <% include ./partials/featuredPost %>
+                                            <% include ./partials/featuredPost %>
                             </div>
                             <div class="newsmag-blog-post-layout-row">
                                 <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>
-                                <% include ./partials/featuredPost %>     
+                                    <% include ./partials/featuredPost %>
+                                        <% include ./partials/featuredPost %>
+                                            <% include ./partials/featuredPost %>
                             </div>
                         </div>
                         <div id="newsmag_widget_posts_grid-1" class="widget newsmag_builder">
@@ -128,126 +122,14 @@
                                     <h2>
                             <span>Technology</span>
                         </h2>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/">Upgrade your smart watch with the latest firmware.</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/these-are-the-best-smartphones-in-the-world/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/these-are-the-best-smartphones-in-the-world/">These are the best smartphones in the world</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/these-are-the-best-smartphones-in-the-world/#comments"><span class=" nmicon-comment-o"></span> 1</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/be-in-charge-of-your-own-work-start-now/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/2_StockSnap_J18ZCO3IPA-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/2_StockSnap_J18ZCO3IPA-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/2_StockSnap_J18ZCO3IPA-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/be-in-charge-of-your-own-work-start-now/">Be in charge of your own work! Start Now.</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/be-in-charge-of-your-own-work-start-now/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/latest-bussiness-tips-for-entreprenours/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/31_StockSnap_QIV7VQGW7K-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/31_StockSnap_QIV7VQGW7K-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/31_StockSnap_QIV7VQGW7K-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/latest-bussiness-tips-for-entreprenours/">Latest Bussiness tips for entreprenours</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/latest-bussiness-tips-for-entreprenours/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/5-tips-for-increasing-your-web-security/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/U19_StockSnap_070GLIS55V-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/U19_StockSnap_070GLIS55V-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/U19_StockSnap_070GLIS55V-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/5-tips-for-increasing-your-web-security/">5 tips for increasing your web security</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/5-tips-for-increasing-your-web-security/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/we-love-the-new-iphone-do-you/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/25_StockSnap_9AXI43044H-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/25_StockSnap_9AXI43044H-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/25_StockSnap_9AXI43044H-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/we-love-the-new-iphone-do-you/">We love the new iPhone. Do you ?</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/we-love-the-new-iphone-do-you/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/how-to-get-work-done-on-an-ultrabook/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/technology-laptop-imac-275x210.png" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/technology-laptop-imac-275x210.png 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/technology-laptop-imac-255x195.png 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/how-to-get-work-done-on-an-ultrabook/">How to get work done on an ultrabook</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/how-to-get-work-done-on-an-ultrabook/#comments"><span class=" nmicon-comment-o"></span> 0</a> </span>
-                                        </div>
-                                    </div>
-                                    <div class="newsmag-blog-post-layout-banner col-md-3">
-                                        <a href="https://www.demos.machothemes.com/newsmag-lite/best-wireless-headphones-of-this-year/">
-                                        <img width="275" height="210" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-275x210.jpg" class="attachment-newsmag-post-grid-small size-newsmag-post-grid-small wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-275x210.jpg 275w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/23_StockSnap_T2P4MN3LQ2-255x195.jpg 255w" sizes="(max-width: 275px) 100vw, 275px" /> </a>
-                                        <div class="banner-content">
-                                            <span class="newsmag-post-layout-category">
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/category/technology/">
-                            Technology                      </a>
-                    </span>
-                                            <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/best-wireless-headphones-of-this-year/">Best Wireless headphones of this year</a>
-                    </h3>
-                                            <span class="meta">
-                        <span class="nmicon-clock-o"></span> October 14, 2016 <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/best-wireless-headphones-of-this-year/#comments"><span class=" nmicon-comment-o"></span> 1</a> </span>
-                                        </div>
-                                    </div>
+                                    <% include ./partials/technology %>
+                                        <% include ./partials/technology %>
+                                            <% include ./partials/technology %>
+                                                <% include ./partials/technology %>
+                                                    <% include ./partials/technology %>
+                                                        <% include ./partials/technology %>
+                                                            <% include ./partials/technology %>
+                                                                <% include ./partials/technology %>
                                 </div>
                             </div>
                         </div>

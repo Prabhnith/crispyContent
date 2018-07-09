@@ -2,24 +2,20 @@
     <div class="row">
         <div class="col-sm-5 col-xs-12">
             <div class="newsmag-image">
-                <a href="https://www.demos.machothemes.com/newsmag-lite/5-useful-websites-for-every-entreprenour/">
-                    <img width="255" height="195" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/12/28_StockSnap_G3YOGRBLF3-255x195.jpg" class="attachment-newsmag-vertical-post size-newsmag-vertical-post wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/12/28_StockSnap_G3YOGRBLF3-255x195.jpg 255w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/12/28_StockSnap_G3YOGRBLF3-275x210.jpg 275w" sizes="(max-width: 255px) 100vw, 255px" />
+                <a href="<%=tour.url%>">
+                    <img width="255" height="195" src="<%=tour.urlToImage%>" class="attachment-newsmag-vertical-post size-newsmag-vertical-post wp-post-image" alt="" srcset="<%=tour.urlToImage%> 255w, <%=tour.urlToImage%> 275w" sizes="(max-width: 255px) 100vw, 255px" />
                 </a>
                 <span class="newsmag-post-box-category">
-                    <a href="https://www.demos.machothemes.com/newsmag-lite/category/big-block-of-4/">Big Block of 4</a>
+                    <a href="https://www.demos.machothemes.com/newsmag-lite/category/big-block-of-4/"><%=tour.author%></a>
                 </span>
             </div>
         </div>
         <div class="col-sm-7 col-xs-12">
             <div class="newsmag-title">
-                <h3><a href="https://www.demos.machothemes.com/newsmag-lite/5-useful-websites-for-every-entreprenour/">5 useful websites for every entreprenour</a></h3>
-                <div class="meta">
-                    <span class="nmicon-clock-o"></span> December 12, 2016
-                    <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/5-useful-websites-for-every-entreprenour/#comments">
-                            <span class=" nmicon-comment-o"></span> 2
-                        </a>
-                </div>
-                <p>All right. Well, take care yourself. I guess that’s what you’re best, presence old master? A tremor in the Force. The last time felt it&hellip; </p>
+                <h3><a href="<%=tour.url%>">
+                <%=tour.title%>
+                </a></h3>
+                <p><%=tour.description %></p>
             </div>
         </div>
     </div>

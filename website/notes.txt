@@ -1,0 +1,5 @@
+ npm install newsapi --save
+
+ npm install --save-dev nodemon
+
+ 

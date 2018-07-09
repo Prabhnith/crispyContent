@@ -2,22 +2,21 @@
     <div class="row">
         <div class="col-sm-3 col-xs-4">
             <div class="newsmag-image">
-                <a href=" https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/">
-                        <img width="65" height="65" src="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-65x65.jpg" class="attachment-newsmag-recent-post-list-image size-newsmag-recent-post-list-image wp-post-image" alt="" srcset="https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-65x65.jpg 65w, https://mk0machothemesd4sa77.kinstacdn.com/wp-content/uploads/sites/7/2016/10/24_StockSnap_2TWEQ37H0H-150x150.jpg 150w" sizes="(max-width: 65px) 100vw, 65px" /> 
+                <a href=" <%= article.url%>">
+                        <img width="65" height="65" 
+                        src = "<%= article.urlToImage %>"
+
+                        class="attachment-newsmag-recent-post-list-image size-newsmag-recent-post-list-image wp-post-image" alt="" srcset="<%= article.urlToImage %> 65w, <%= article.urlToImage %> 150w" sizes="(max-width: 65px) 100vw, 65px" /> 
                     </a>
             </div>
         </div>
         <div class="col-sm-9 col-xs-8">
             <div class="newsmag-title">
                 <h3>
-                        <a href="https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/">Upgrade your smart watch with the latest firmware.</a>
-                    </h3>
-                <div class="meta">
-                    <span class="nmicon-clock-o"></span> October 14, 2016
-                    <a class="newsmag-comments-link" href="https://www.demos.machothemes.com/newsmag-lite/upgrade-your-smart-watch-with-the-latest-firmware/#comments">
-                            <span class=" nmicon-comment-o"></span> 0
+                        <a href="<%= article.url%>">
+                        <%= article.title %>
                         </a>
-                </div>
+                    </h3>
             </div>
         </div>
     </div>
