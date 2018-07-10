@@ -70,15 +70,12 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div id="newsmag_widget_posts_column-1" class="widget newsmag_builder">
-                            <% include ./partials/topic-column %>
-                        </div>
-                        <div id="newsmag_widget_posts_column-2" class="widget newsmag_builder">
-                            <% include ./partials/topic-column %>
-                        </div>
-                        <div id="newsmag_widget_posts_column-3" class="widget newsmag_builder">
-                            <% include ./partials/topic-column %>
-                        </div>
+                        <% topics.forEach(function(topic){ %>
+                            <div class="widget newsmag_builder">
+                                <%- include("./partials/topic-column",{topic}); %>
+                            </div>
+                            <% }); %>
+                        
                         <div id="newsmag_widget_posts_list_vertical-1" class="widget newsmag_builder">
                             <div class="col-md-8 newsmag-post-list-vertical-row">
                                 <h2>
@@ -105,16 +102,17 @@
                                     <span>Featured</span>
                                 </h2>
                                 </div>
-                                <% include ./partials/featuredPost %>
-                                    <% include ./partials/featuredPost %>
-                                        <% include ./partials/featuredPost %>
-                                            <% include ./partials/featuredPost %>
+                                <div class="newsmag-blog-post-layout-row">
+                                <% featured.forEach(function(feature){ %>
+                                    <%- include("./partials/featuredPost",{feature}); %>
+                                <% }); %> 
+                                </div>
                             </div>
+
                             <div class="newsmag-blog-post-layout-row">
-                                <% include ./partials/featuredPost %>
-                                    <% include ./partials/featuredPost %>
-                                        <% include ./partials/featuredPost %>
-                                            <% include ./partials/featuredPost %>
+                            <% featured1.forEach(function(feature){ %>
+                                    <%- include("./partials/featuredPost",{feature}); %>
+                                <% }); %> 
                             </div>
                         </div>
                         <div id="newsmag_widget_posts_grid-1" class="widget newsmag_builder">
@@ -123,14 +121,9 @@
                                     <h2>
                             <span>Technology</span>
                         </h2>
-                                    <% include ./partials/technology %>
-                                        <% include ./partials/technology %>
-                                            <% include ./partials/technology %>
-                                                <% include ./partials/technology %>
-                                                    <% include ./partials/technology %>
-                                                        <% include ./partials/technology %>
-                                                            <% include ./partials/technology %>
-                                                                <% include ./partials/technology %>
+                                <% technology.forEach(function(tech){ %>
+                                    <%- include("./partials/technology",{tech}); %>
+                                <% }); %> 
                                 </div>
                             </div>
                         </div>
